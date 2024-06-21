@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Login.css">
+    <script lenguage="JavaScript">
+        function Iniciar(){
+            var part1 = document.getElementById("exampleInputEmail1").value;
+            
+            if (part1 === ""){
+                alert("El campo 'Correo' es requerido.");
+            }
+
+            else{
+                alert("Correo o contraseña inválido.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="form">
+        <form action="#">
+            <h1 class="welcome">¡Bienvenido de nuevo a JVO!</h1>
+            <h1 class="title">Iniciar Sesión en JVO</h1>
+            <div class="inputBox">
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre de Usuario">
+            </div>
+            <div class="inputBox">
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+            </div>
+            <div class="inputBox">
+                <input type="button" value="Login" onclick="Iniciar()" class="btn">
+            </div>
+        </form>
+        <div class="forgot-password">
+            <a href="password-forgot.html">¿Olvidaste tu contraseña?</a>
+        </div>
+        <div class="register">
+            <a href="JVoregister.html">Registrarse</a>
+        </div>
+    </div>
+</body>
+</html>

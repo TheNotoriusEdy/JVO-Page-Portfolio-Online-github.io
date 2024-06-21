@@ -1,0 +1,46 @@
+h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url(img/pexels-alscre-2847648.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.mb-3 {
+    width: 50%;
+    margin: auto;
+    color: white;
+}
+
+.btn {
+    width: 50%;
+    margin: auto;
+    color: white;
+    background-color: lightgreen;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    box-shadow: 1px 1px 1px 1px rgb(115, 238, 146);
+}
+
+.btn a {
+    text-decoration: none;
+}
+
+.btn a:hover {
+    color: white;
+}
+
+.btn:hover {
+    background-color: lightskyblue;
+}

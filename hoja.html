@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Devida.css">
+    <script lengauge="JavaScript">
+        function validar(){
+            var nomb = document.getElementById("nombre").value;
+            var emai = document.getElementById("email").value;
+            var cel = document.getElementById("telefono").value;
+            var lugar = document.getElementById("direccion").value;
+            var exp = document.getElementById("experiencia").value;
+            var schol = document.getElementById("educacion").value;
+            var habil = document.getElementById("habilidades").value;
+
+            if (nomb === ""){
+                alert("El campo 'Nombre' es requerido.");
+            }
+
+            else if (emai === ""){
+                alert("El campo 'Email' es requerido.");
+            }
+
+            else if (cel === ""){
+                alert("El campo 'Telefono' es requerido.");
+            }
+
+            else if (lugar === ""){
+                alert("El campo 'Direccion' es requerido.");
+            }
+
+            else if (exp === ""){
+                alert("El campo 'Experiencia' es requerido.");
+            }
+
+            else if (schol === ""){
+                alert("El campo 'Educacion' es requerido.");
+            }
+
+            else if (habil === ""){
+                alert("El campo 'Habilidades' es requerido.");
+            }
+
+            else{
+                alert("Informacion Enviada Exitosamente.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2>Formulario para tu hoja de vida</h2>
+        <form>
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+            <div class="form-group">
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" required>
+            </div>
+            <div class="form-group">
+                <label for="experiencia">Experiencia Laboral:</label>
+                <textarea id="experiencia" name="experiencia" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="educacion">Educación:</label>
+                <textarea id="educacion" name="educacion" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="habilidades">Habilidades:</label>
+                <textarea id="habilidades" name="habilidades" rows="4" required></textarea>
+            </div>
+            <button type="submit" value="registrar" onclick="validar()" class="btn2"><a href="index.html">Enviar</a></button>
+        </form>
+        <button type="button" class="btn2"><a href="index.html">Volver al menu principal</a></button>
+    </div>
+</body>
+</html>
